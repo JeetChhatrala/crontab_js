@@ -715,6 +715,13 @@ clean:
   return handle_err(err, perr);
 }
 
+// job add simple version for FFI
+
+bool mgos_crontab_job_add_simple(struct mg_str at, bool enable, struct mg_str action,
+                          struct mg_str payload, long int *pid){
+                            return mgos_crontab_job_add(at ,enable ,action ,payload ,pid, NULL);
+                          }
+/////////////////////////////////////////////////////////////////////////////////////////////////
 bool mgos_crontab_job_edit(mgos_crontab_job_id_t id, struct mg_str at,
                            bool enable, struct mg_str action,
                            struct mg_str payload, char **perr) {
