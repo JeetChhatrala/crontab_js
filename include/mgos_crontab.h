@@ -121,7 +121,7 @@ bool mgos_crontab_job_add(struct mg_str at, bool enable, struct mg_str action,
 
 // Simple version of job add for FFI
 bool mgos_crontab_job_add_simple(struct mg_str at, bool enable, struct mg_str action,
-                          struct mg_str payload, long int *pid);
+                          struct mg_str payload, long int pid);
 
 /*
  * Edit a job by its id. Passed string data is not retained.

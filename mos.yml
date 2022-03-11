@@ -8,13 +8,14 @@ sources:
 includes:
   - include
 
+libs:
+  - location: https://github.com/mongoose-os-libs/ca-bundle
+  - location: https://github.com/mongoose-os-libs/cron
+  - location: https://github.com/mongoose-os-libs/jstore
+
 tags:
   - c
   - core
   - docs:misc:Crontab
-
-libs:
-  - location: https://github.com/mongoose-os-libs/cron
-  - location: https://github.com/mongoose-os-libs/jstore
 
 manifest_version: 2017-09-29
